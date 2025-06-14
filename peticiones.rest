@@ -1,0 +1,37 @@
+@host = http://localhost:3000
+
+###########
+# AUTORES #
+###########
+
+GET {{host}}/api/autores
+
+###
+POST {{host}}/api/autores
+Content-Type: application/json
+
+{
+    "nombre": "Raul3",
+    "email": "raul3@gmail.com",
+    "imagen": "raul.png"
+}
+
+#########
+# POSTS #
+#########
+
+GET {{host}}/api/posts
+
+###
+GET {{host}}/api/posts/autor/4
+
+###
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Post prueba 10",
+    "descripcion": "Descripcion 2",
+    "categoria": "Categoria 2",
+    "autor_id": 44
+}
