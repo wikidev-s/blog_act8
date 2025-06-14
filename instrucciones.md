@@ -37,7 +37,7 @@ Response: El objeto que representa el nuevo post creado
 ## Recuperar todos los posts de un autor
 
 Method: GET
-URL: /api/posts/autor/<AUTORID>
+URL: /api/posts/autor/:autorId
 Headers: XXXX
 Body: XXXX
 
